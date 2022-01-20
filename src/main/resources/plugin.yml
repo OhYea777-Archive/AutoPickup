@@ -1,0 +1,19 @@
+name: AutoPickup
+version: 0.1
+authors: [OhYea777]
+main: com.ohyea777.autopickup.AutoPickup
+
+commands:
+  autopickup:
+    aliases: [ap,autop,apickup]
+
+permissions:
+  autopickup.*:
+    children:
+      autopickup.reload: true
+      autopickup.user: true
+  autopickup.user:
+    children:
+      autopickup.pickup: true
+      autopickup.customblocks: true
+      autopickup.fortuneblocks: true
